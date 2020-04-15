@@ -11,18 +11,18 @@ class SearchForm(forms.Form):
         required=False, empty_label="Any kind", queryset=models.RoomType.objects.all()
     )
     price = forms.IntegerField(required=False)
-    guest = forms.IntegerField(required=False)
+    guests = forms.IntegerField(required=False)
     bedrooms = forms.IntegerField(required=False)
     beds = forms.IntegerField(required=False)
     baths = forms.IntegerField(required=False)
     instant_book = forms.BooleanField(required=False)
     superhost = forms.BooleanField(required=False)
-    amenities = forms.ModelChoiceField(
+    amenities = forms.ModelMultipleChoiceField(
         required=False,
         queryset=models.Amenity.objects.all(),
         widget=forms.CheckboxSelectMultiple,
     )
-    facilities = forms.ModelChoiceField(
+    facilities = forms.ModelMultipleChoiceField(
         required=False,
         queryset=models.Facility.objects.all(),
         widget=forms.CheckboxSelectMultiple,
