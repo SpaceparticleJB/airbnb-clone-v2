@@ -6,7 +6,7 @@
 }
 
 .nav_link {
-  @apply ml-8 border-b-2 border-white h-full flex items-center;
+  @apply ml-6 border-b-2 border-white h-full flex items-center;
   a {
     @apply py-10 px-5;
   }
@@ -25,12 +25,13 @@ input {
     @apply outline-none border-teal-500;
   }
 }
+
 form {
   .input {
-    @apply mb-3;
+    @apply mb-3 w-full;
     &.has_error {
       input {
-        @apply bg-red-200 border-gray-400;
+        @apply bg-red-200 border-gray-600;
         &:focus {
           @apply border-gray-600;
         }
