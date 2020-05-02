@@ -40,6 +40,10 @@ select {
   height: 50px;
 }
 
+.border-section {
+  @apply border-b border-gray-400 pb-8 mt-8;
+}
+
 form {
   .input {
     @apply mb-3 w-full;
