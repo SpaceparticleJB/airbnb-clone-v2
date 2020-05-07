@@ -99,5 +99,8 @@ form {
     @apply bg-yellow-400;
   }
 }
+.cal-number {
+  @apply w-full text-center rounded p-1 cursor-pointer;
+}
 
 @tailwind utilities;
