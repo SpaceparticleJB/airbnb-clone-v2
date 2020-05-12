@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-13 02:11+0900\n"
+"POT-Creation-Date: 2020-05-13 02:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,37 +19,35 @@ msgstr ""
 
 #: templates/base.html:26
 msgid "Search By City"
-msgstr "都市名での検索"
+msgstr ""
 
 #: templates/partials/footer.html:5
 msgid "Please don't copy us."
-msgstr "無断盗用禁止"
+msgstr ""
 
 #: templates/partials/footer.html:7
 msgid "All rights reserved"
-msgstr "版権所有"
+msgstr ""
 
 #: templates/rooms/room_list.html:25
 #, python-format
 msgid ""
-"Page%(current_page)s\n"
-"            of %(total_pages)s"
-msgstr  ""
-"ペイジ%(current_page)s\n"
-"            の中 %(total_pages)s"
+"Page\n"
+"            %(current_page)s of %(total_pages)s"
+msgstr ""
 
 #: users/mixins.py:22
 msgid "Can't go there"
-msgstr "入りません"
+msgstr ""
 
 #: users/models.py:21
 msgid "Male"
-msgstr "男子"
+msgstr ""
 
 #: users/models.py:22
 msgid "Female"
-msgstr "女子"
+msgstr ""
 
 #: users/models.py:23
 msgid "Other"
-msgstr "他"
+msgstr ""
