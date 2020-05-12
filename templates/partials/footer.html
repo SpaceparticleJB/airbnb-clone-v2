@@ -7,9 +7,11 @@
     <span>&copy; 2020 JBNB. {% trans "All rights reserved" %}.</span>
   </div>
   <div class="mt-10 flex">
+    {% get_current_language as LANGUAGE_CODE %}
+    {{LANGUAGE_CODE}}
     <select class="w-1/5 h-8" id="js-lang">
-      <option value="en">English</option>
-      <option value="jp">Japanese</option>
+      <option value="en" {% if LANGUAGE_CODE == 'en' %} selected {% endif %}>English</option>
+      <option value="ja" {% if LANGUAGE_CODE == 'ja' %} selected {% endif %}>Japanese</option>
     </select>
   </div>
 </footer>
