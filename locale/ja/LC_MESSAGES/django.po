@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-13 02:47+0900\n"
+"POT-Creation-Date: 2020-05-13 18:37+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,17 @@ msgstr "無断盗用禁止"
 msgid "All rights reserved"
 msgstr "版権所有"
 
-#: templates/rooms/room_detail.html:33
+#: templates/partials/nav.html:18
+msgid "Favs"
+msgstr "お気に入り"
+
+#: templates/rooms/room_detail.html:30
+#, fuzzy
+#| msgid "Save to Favourites"
+msgid "Remove from Favourites"
+msgstr "お気に入り"
+
+#: templates/rooms/room_detail.html:33 templates/rooms/room_detail.html:37
 msgid "Save to Favourites"
 msgstr "お気に入り"
 
