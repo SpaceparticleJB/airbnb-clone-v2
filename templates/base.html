@@ -8,27 +8,184 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'css/styles2.css' %}">
   <title>{% block page_title %}{% endblock page_title %}| Jbnb</title>
 </head>
 
 <body class="text-gray-800 mt-24 font-light">
   {% include "partials/messages.html" %}
 
-  <header
-    class="container max-w-full inset-0 flex items-center justify-between px-6 h-20 border-b border-gray-400 fixed bg-white">
-    <div class="flex items-center">
-      <a href="{% url "core:home" %}" class="mr-6">
-        <img class="w-32" src="{% static 'img/logo.png' %}"></a>
-      {% block search-bar %}
-      <form method="get" action="{% url "rooms:search" %}">
-        <input
-          class="search-box border px-5 py-2 text-sm font-medium text-gray-900 placeholder-gray-600 rounded-sm w-64 shadow-md hover:shadow-lg focus:outline-none"
-          name="city" placeholder="{% trans "Search By City" %}" />
-      </form>
-      {% endblock search-bar %}
+  <div class="global-header">
+    <div class="global-header__upper inner clearfix">
+      <header
+        class="container max-w-full inset-0 flex items-center justify-between px-6 h-20 border-b border-gray-400 bg-white">
+        <div class="flex items-center">
+          <div class="flex "></div>
+          {% block search-bar %}
+          <form method="get" action="{% url "rooms:search" %}">
+            <input
+              class="search-box border px-5 py-2 text-sm font-medium text-gray-900 placeholder-gray-600 rounded-sm w-32 shadow-md hover:shadow-lg focus:outline-none"
+              name="city" placeholder="{% trans "Search By Item" %}" />
+          </form>
+          {% endblock search-bar %}
+          <a href="{% url "core:home" %}" class="ml-6">
+            <h1>soap</h1>
+            <img class="w-32" src="{% static 'img/logo.png' %}">
+          </a>
+        </div>
+        {% include "partials/nav.html" %}
+      </header>
     </div>
-    {% include "partials/nav.html" %}
-  </header>
+    <nav class="global-header__lower sticky-header">
+      <div class="inner">
+        <ul class="global-header__gnav">
+          <li><a href="https://www.mutenka-sekken.com/">TOP</a></li>
+          <li>
+            <a href="https://www.mutenka-sekken.com/SHOP/list.php?Search=">商品一覧</a>
+            <div class="global-header__megamenu">
+              <ul class="global-header__megamenu-lists inner">
+                <li>
+                  <a href="https://www.mutenka-sekken.com/SHOP/164680/173204/list.html">
+                    <div class="global-header__megamenu-list-img"><img
+                        src="https://www.mutenka-sekken.com/pic-labo/menu_kamataki_series.jpg" alt="釜焚き石鹸シリーズ"></div>
+                    <h2 class="global-header__megamenu-list-txt">釜焚きシリーズ</h2>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.mutenka-sekken.com/SHOP/164680/173205/list.html">
+                    <div class="global-header__megamenu-list-img"><img
+                        src="https://www.mutenka-sekken.com/pic-labo/menu_cold_series.jpg" alt="コールドプロセス石鹸シリーズ"></div>
+                    <h2 class="global-header__megamenu-list-txt">コールドシリーズ</h2>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.mutenka-sekken.com/SHOP/164680/173207/list.html">
+                    <div class="global-header__megamenu-list-img"><img
+                        src="https://www.mutenka-sekken.com/pic-labo/menu_tabi_series.jpg" alt="旅する石鹸シリーズ"></div>
+                    <h2 class="global-header__megamenu-list-txt">旅する石鹸シリーズ</h2>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.mutenka-sekken.com/SHOP/164680/173206/list.html">
+                    <div class="global-header__megamenu-list-img"><img
+                        src="https://www.mutenka-sekken.com/pic-labo/menu_bar_series.jpg" alt="棒石鹸シリーズ"></div>
+                    <h2 class="global-header__megamenu-list-txt">棒石鹸シリーズ</h2>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.mutenka-sekken.com/SHOP/164680/173209/list.html">
+                    <div class="global-header__megamenu-list-img"><img
+                        src="https://www.mutenka-sekken.com/pic-labo/menu_shampoo_series2.jpg" alt="ヘアケアシリーズ"></div>
+                    <h2 class="global-header__megamenu-list-txt">ヘアケア</h2>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.mutenka-sekken.com/SHOP/164680/173208/list.html">
+                    <div class="global-header__megamenu-list-img"><img
+                        src="https://www.mutenka-sekken.com/pic-labo/menu_series_bodysoap.jpg" alt="ボディソープシリーズ"></div>
+                    <h2 class="global-header__megamenu-list-txt">ボディソープ</h2>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.mutenka-sekken.com/SHOP/164680/173210/list.html">
+                    <div class="global-header__megamenu-list-img"><img
+                        src="https://www.mutenka-sekken.com/pic-labo/menu_choco_series.jpg" alt="チョコレート石鹸"></div>
+                    <h2 class="global-header__megamenu-list-txt">チョコレート石鹸</h2>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.mutenka-sekken.com/SHOP/205485/list.html">
+                    <div class="global-header__megamenu-list-img"><img
+                        src="https://www.mutenka-sekken.com/pic-labo/menu_scrub_series.jpg" alt="無添加ボディスクラブ"></div>
+                    <h2 class="global-header__megamenu-list-txt">無添加ボディスクラブ</h2>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.mutenka-sekken.com/SHOP/207273/list.html">
+                    <div class="global-header__megamenu-list-img"><img
+                        src="https://www.mutenka-sekken.com/pic-labo/menu_series_handcream.jpg" alt="無添加ハンドクリーム"></div>
+                    <h2 class="global-header__megamenu-list-txt">無添加ハンドクリーム</h2>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.mutenka-sekken.com/SHOP/207274/list.html">
+                    <div class="global-header__megamenu-list-img"><img
+                        src="https://www.mutenka-sekken.com/pic-labo/menu_series_rip.jpg" alt="無添加リップバーム"></div>
+                    <h2 class="global-header__megamenu-list-txt">無添加リップバーム</h2>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.mutenka-sekken.com/SHOP/216646/list.html">
+                    <div class="global-header__megamenu-list-img"><img
+                        src="https://www.mutenka-sekken.com/pic-labo/llimg/father_choice785.jpg" alt="2020年父の日ギフト">
+                    </div>
+                    <h2 class="global-header__megamenu-list-txt">2020年父の日ギフト</h2>
+                  </a>
+                </li>
+              </ul><!-- .megamenu-inner -->
+            </div><!-- .megamenu -->
+          </li>
+          <li>
+            <a href="https://www.mutenka-sekken.com/hpgen/HPB/entries/1.html">
+              会社概要
+            </a>
+          </li>
+          <li>
+            <a href="https://www.mutenka-sekken.com/hpgen/HPB/shop/shoppinguide.html">
+              お支払い・送料
+            </a>
+          </li>
+          <li>
+            <a href="https://cart8.shopserve.jp/mutenka.qi/FORM/contact.cgi"
+              onclick="window.open('https://cart8.shopserve.jp/mutenka.qi/FORM/contact.cgi', 'contact', 'width=600, height=600, scrollbars=1, resizable=1'); return false;">
+              お問い合せ
+            </a>
+          </li>
+          <li>
+            <a href="https://www.mutenka-sekken.com/SHOP/mailmag.html"
+              onclick="window.open('https://www.mutenka-sekken.com/SHOP/mailmag.html', 'newsletter', 'width=1024, height=800, scrollbars=1, resizable=1'); return false;">
+              メルマガ登録
+            </a>
+          </li>
+          <li>
+            <a href="https://cart8.shopserve.jp/mutenka.qi/login.cgi"
+              onclick="window.open('https://cart8.shopserve.jp/mutenka.qi/login.cgi', 'mypage', 'width=600, height=600, scrollbars=1, resizable=1'); return false;">
+              マイページ
+            </a>
+          </li>
+          <li>
+            <a href="https://cart8.shopserve.jp/-/mutenka-sekken.com/cart.php">
+              買い物かご
+            </a>
+          </li>
+          <li>
+            <a href="https://www.mutenka-sekken.com/oroshi.htm">
+              卸・委託販売について
+            </a>
+          </li>
+          <li>
+            <a href="https://www.mutenka-sekken.com/hpgen/HPB/entries/3.html">
+              OEM製造について
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      window.onscroll = function () { myFunction() };
+
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+  </div>
 
   {% block content %}{% endblock %}
 
