@@ -409,6 +409,10 @@ body.drawer-opened #overlay {
   opacity: 0.9;
   transition: 0.2s;
 }
+
+.slick-track {
+  height: 300px;
+}
 .slick-dotted.slick-slider {
   margin-bottom: 0 !important;
 }
