@@ -4,8 +4,9 @@
 
   {% if user.is_authenticated %}
 
-  <li class="nav_link"><a href="{% url 'lists:see-favs' %}">{% trans "Favs" %} ({{user.list.rooms.count}})</a></li>
-  <li class="nav_link"><a href="{{user.get_absolute_url}}">Profile</a></li>
+  <li class="nav_link"><a href="{% url 'lists:see-favs' %}"><i
+        class="fas fa-shopping-cart fa-2x"></i>({{user.list.rooms.count}})</a></li>
+  <li class="nav_link"><a href="{{user.get_absolute_url}}"><i class="fas fa-user fa-2x"></i></a></li>
   <li class="nav_link""><a href=" {% url "users:logout"%}">Log out</a></li>
   {% else %}
   <li class="nav_link"><a href="{% url "users:login"%}">Log in</a>

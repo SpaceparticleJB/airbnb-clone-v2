@@ -25,43 +25,1054 @@
 </script>
 
 
-<div class="container mx-auto pb-10">
-    <div class="top-slider">
-        <div class="top-slider__container">
-            <div class="rounded-xl bg-gray-800 h-50vh mt-32 mb-20 bg-cover bg-center"
-                style="background-image: url(https://images.unsplash.com/photo-1559925393-8be0ec4767c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80);">
+<div class="top-slider">
+    <div class="top-slider__container">
 
-            </div>
-            <div class="rounded-xl bg-gray-800 h-50vh mt-32 mb-20 bg-cover bg-center"
-                style="background-image: url(https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1930&q=80);">
+        <div class="top-slider__item">
+            <a href="#">
+                <img src="https://images.unsplash.com/photo-1541173056672-97e84767d149?ixlib=rb-1.2.1&auto=format&fit=crop&w=2794&q=80"
+                    alt="">
+                <!-- <p class="top-slider__item-copy">無添加石鹸本舗</p> -->
+            </a>
+        </div>
+        <div class="top-slider__item">
+            <a href="#">
+                <img src="https://images.unsplash.com/photo-1542020667-adc2bf0b744d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1634&q=80"
+                    alt="">
+                <!-- <p class="top-slider__item-copy">無添加石鹸本舗</p> -->
+            </a>
+        </div>
 
-            </div>
-            <div class="rounded-xl bg-gray-800 h-50vh mt-32 mb-20 bg-cover bg-center"
-                style="background-image: url(https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80);">
-
-            </div>
+        <div class="top-slider__item">
+            <a href="#">
+                <img src="https://images.unsplash.com/photo-1499392655230-76618946a1d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2813&q=80"
+                    alt="">
+                <!-- <p class="top-slider__item-copy">無添加石鹸本舗</p> -->
+            </a>
         </div>
     </div>
-    <div class="flex flex-wrap mb-10">
-        {% for room in rooms %}
-        {% include "mixins/room_card.html" with room=room %}
-        {% endfor %}
+</div><!-- /.top-slider -->
+
+<div class="top-news">
+    <div class="inner">
+        <div class="top-news__container">
+            <section class="top-news__ttl">
+                <h2 class="top-news__ttl-text">新着情報・イベント</h2>
+            </section>
+            <ul class="top-news__lists top-news__scroll">
+
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2020/5/23</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">こだわりの父の日ギフト販売会開始しました！<br>
+                            5月23日から6月29日の間「こだわりの父の日ギフトセット」の販売を行います。<br>数量限定でなくなり次第終了致します。オリジナルの素敵な特製ギフト包装でお届けいたします！<br>
+                            くわしくはこちら！<br><a
+                                href="https://www.mutenka-sekken.com/SHOP/216646/list.html ">https://www.mutenka-sekken.com/SHOP/216646/list.html</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2020/4/28</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">ゴールデンウイーク期間中の発送日のお知らせ<br>
+                            ゴールデンウイーク期間中は5月2日～6日はお休み致します。<br>
+                            ご注文、お問い合わせは通常通りに受け付けておりますが、発送は7日より再開いたします。<br>
+                            ご不便をおかけしますが、よろしくお願い致します。
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2020/4/13</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">こだわりの母の日ギフト販売会開始しました！<br>
+                            4月13日から5月17日の間「こだわりの母の日ギフトセット」の販売を行います。<br>数量限定でなくなり次第終了致します。オリジナルのかわいい特製ギフト包装でお届けいたします！<br>
+                            くわしくはこちら！<br><a
+                                href="https://www.mutenka-sekken.com/SHOP/209308/list.html ">https://www.mutenka-sekken.com/SHOP/209308/list.html</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2020/4/3</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">阪急百貨店　梅田本店イベント中止のお知らせ<br>
+                            4月8日より予定していた梅田阪急でのイベント販売ですが、コロナウイルス流行の影響で中止となりました。<br>
+                            ご来店予定だったお客様、いつも楽しみにして頂いているお客様には誠に申し訳ございません。<br>
+                            百貨店でお配りしているクーポンはホームページでのお買い物時にご使用頂けますので、是非ご利用下さい。
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2020/3/3</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">お電話窓口混雑のお知らせ<br>
+                            3月2日に旅する石鹸が読売新聞の夕刊に掲載されました。その影響でお電話の窓口が非常に繋がりにくくなる可能性がございます。<br>期間限定で受付委時間を17時から20時まで延長しておりますので、気になる点はお問い合わせください。<br>WEBの受付、お問い合わせは24時間受け付けております。<br>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2020/2/18</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">阪神百貨店　梅田本店で販売会開始!!<br>
+                            2月26日(水)から3月3日(火)の間販売会を行います。<br>2階化粧品売り場「コスメティックキューブ」に出店していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            <br>お買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています!
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/12/28</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">
+                            とってもお得な福袋の販売を開始しました！1月5日までの数量・期間限定の販売ですので、ご希望の方は早めにお申し込み下さいね！なくなり次第終了いたします。
+                            福袋初夢セットはこちらからチェック↓↓
+                            <a
+                                href="https://www.mutenka-sekken.com/SHOP/206228/list.html">https://www.mutenka-sekken.com/SHOP/206228/list.html</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/12/28</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">年末年始休暇のお知らせ<br>誠に勝手ながら、12月28日より1月5日までお休みさせて頂きます。<br>
+                            商品のご購入はお休みの間も受け付けておりますが、商品の発送は12月27日の午後12時の時点でご入金確認分までが年内最終出荷、それ以降の受注分は1月6日より順次発送となりますのでご了承の程宜しくお願い申し上げます。
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/12/23</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">阪急うめだ本店「日本のものづくり市」に出店します。<br>
+                            12月26日から30日まで販売会を行います。最終日は18:00終了です。<br>
+                            9階の催事場「日本のものづくり展」に出展していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            1年に一度の福袋も販売しています!またお買い上げ時にはサンプル3個貰えるお得なクーポンもお配りしています。
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/9/29</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">消費税率と送料の変更のお知らせ<br>
+                            消費税変更につき、10月1日より全商品の税率を変更致します。また誠に恐れ入りますが、度重なる運送会社の値上げにより送料も変更になります。<br>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/9/22</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">神戸新聞に掲載されました！<br>
+                            18面「自慢のイッピンinひょうご」で旅する石鹸などをご紹介頂きました。<br>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/8/15</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">千葉そごうで販売会開始!!<br>
+                            8月19日(月)から29日(木)の間販売会を行います。<br>6階化粧品売場「日本の職人展」で展開していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています!
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/8/8</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">お盆休みのお知らせ<br>
+                            誠に勝手ながら、8月11日より15日までお休みさせて頂きます。商品のご注文はお休みの間も受け付けておりますが、商品の発送は8月16日より順次発送となりますのでご了承の程宜しくお願い申し上げます。<br>また、ご質問等に対するお返事も同様の対応とさせて頂きますのでご了承ください。<br>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/7/6</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">大好評！お中元ギフト販売会開始！<br>
+                            7月6日から8月15日まで毎年大好評の「こだわりのお中元ギフトセット」の販売を行います。<br>オリジナルの特製ギフト包装でお届けいたします！<br>
+                            くわしくはこちら！<br><a
+                                href="https://www.mutenka-sekken.com/SHOP/200024/list.html">https://www.mutenka-sekken.com/SHOP/200024/list.html</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/6/21</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">阪神百貨店　梅田本店で販売会開始!!<br>
+                            6月26日(水)から7月2日(火)の間販売会を行います。<br>2階化粧品売り場「コスメティックキューブ」に出店していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            <br>お買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています!
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/6/21</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">Ｇ20サミットに伴うお届け日遅延・時間指定サービスの停止のお知らせ<br>
+                            大阪市内でＧ20サミットが開催されるに伴い、大阪市内で大規模な交通規制が行われます。そのため、6月27日から7月2日頃まで関西地方の一部地域がお届け先となる場合、荷物のお届けに遅れが生じる可能性がございます。<br>また、その影響で下記の地域でのお届け日、お届け時間の指定はお受けすることができません。何卒ご了承頂けるようお願い致します。<br>対象地域：大阪府（全域）、兵庫県（芦屋市、尼崎市、伊丹市、西宮市）<br>詳しくはヤマト運輸のＨＰをご覧ください。
+                            <br><a
+                                href="http://www.kuronekoyamato.co.jp/ytc/info/info_190531_02.html">http://www.kuronekoyamato.co.jp/ytc/info/info_190531_02.html</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/6/9</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">こだわりの父の日ギフト販売会開始！<br>
+                            6月9日から23日の間「こだわりの父の日ギフトセット」の販売を行います。<br>数量限定でなくなり次第終了致します。オリジナルのかわいい特製ギフト包装でお届けいたします！<br>
+                            くわしくはこちら！<br><a
+                                href="https://www.mutenka-sekken.com/SHOP/164680/200024/list.html">https://www.mutenka-sekken.com/SHOP/164680/200024/list.html</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/6/07</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">札幌　東急百貨店で販売会開始!!<br>
+                            6月13日(木)から18日(火)の間販売会を行います。<br>9階催事場「神戸セレクション」に出店していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            新商品のハンドクリーム、リップバーム、ボディスクラブなども販売しています。<br>またお買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています!
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/5/20</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">広島　福屋八丁堀本店で販売会開始!!<br>
+                            5月23日(水)から28日(火)の間販売会を行います。<br>8階催事場「神戸セレクション」に出店していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            <br>まお買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています!
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/4/27</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">こだわりの母の日ギフト販売会開始しました！<br>
+                            4月27日から5月19日の間「こだわりの母の日ギフトセット」の販売を行います。<br>数量限定でなくなり次第終了致します。オリジナルのかわいい特製ギフト包装でお届けいたします！<br>
+                            くわしくはこちら！<br><a
+                                href="https://www.mutenka-sekken.com/SHOP/164680/200024/list.html">https://www.mutenka-sekken.com/SHOP/164680/200024/list.html</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/4/26</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">ゴールデンウイーク期間中の発送日のお知らせ<br>
+                            ゴールデンウイーク期間中は4月27～29日と、5月3日～6日はお休み致します。<br>
+                            4月30日から5月2日は通常通り営業・発送いたします。<br>
+                            ご不便をおかけしますが、よろしくお願い致します。
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/4/9</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">名古屋松坂屋で販売会開始！<br>
+                            4月10日から16日まで販売会を行います。最終日は18:00終了です。<br>
+                            6階のタオル売場のイベントスペースに出展していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはミニ石鹸が3個貰えるお得なクーポンをお配りしています!
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/3/29</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">阪急うめだ本店「日本の職人展」に出店します。<br>
+                            4月3日から8日まで販売会を行います。最終日も20:00終了です。<br>
+                            9階の催事場「日本の職人展」に出展していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはミニ石鹸が3個貰えるお得なクーポンをお配りしています!
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/3/16</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">阪急西宮で販売会開始!<br>
+                            3月20日(水)から26日(火)の間販売会を行います。<br>1階のご進物センター前、バス・リラクシング売場にいますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            新商品の「おててしっとりハンドクリーム」「しっとりやさしいリップバーム」も販売しています。<br>またお買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています!</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/3/8</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">京阪百貨店ひらかた店「春のてまひま市」に出店します。<br>
+                            3月9日から14日まで販売会を行います。最終日は18:00終了です。<br>
+                            京阪ひらかた市駅中央改札口出てすぐ、「もより市」に出展していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            新商品のハンドクリーム、リップバームも販売致します。<br>
+                            またお買い上げ時にはサンプル3個貰えるお得なクーポンもお配りしています。
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/3/7</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">無添加ハンドクリーム＆リップバームの販売開始！<br>
+                            天然成分だけで作ったお肌に優しいハンドクリームとリップバームです。乾燥するお肌や唇を天然保湿成分が優しく守ります。自然な優しい香りです。<br>
+                            無添加ハンドクリームはこちら<br>
+                            <a
+                                href="https://www.mutenka-sekken.com/SHOP/H001.html">https://www.mutenka-sekken.com/SHOP/H001.html</a><br>
+                            無添加リップバームはこちら<br>
+                            <a
+                                href="https://www.mutenka-sekken.com/SHOP/R001.html">https://www.mutenka-sekken.com/SHOP/R001.html</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/2/12</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">アッププラスで掲載されました！<br>
+                            女性誌「Up PLUS」に旅する石鹸が紹介されました！79ページの石鹸特集に掲載されています。<br>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/1/29</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">幕張メッセで国際化粧品展に出展します<br>
+                            1月30日から2月1日まで幕張メッセで展示会を行います。ＯＥＭ製造のご相談や卸販売、イベント販売に関する商談も承っておりますので、
+                            ご関係者の方は是非ご来場ください。会場は第7ホール、ブース番号「12-47」になります。最終日は17:00終了です。<br>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2019/1/3</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">
+                            とってもお得な福袋の販売を開始しました！数量・期間限定の販売ですので、ご希望の方は早めにお申し込み下さいね！
+                            福袋初夢セットはこちらからチェック↓↓
+                            <a
+                                href="https://www.mutenka-sekken.com/SHOP/206228/list.html">https://www.mutenka-sekken.com/SHOP/206228/list.html</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/12/27</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">年末年始休暇のお知らせ<br>誠に勝手ながら、12月29日より1月6日までお休みさせて頂きます。<br>
+                            商品のご購入はお休みの間も受け付けておりますが、商品の発送は12月28日の午後12時の時点でご入金確認分までが年内最終出荷、それ以降の受注分は1月7日より順次発送となりますのでご了承の程宜しくお願い申し上げます。
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/12/26</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">阪急うめだ本店「日本のものづくり市」に出店します。<br>
+                            12月26日から30日まで販売会を行います。最終日は18:00終了です。<br>
+                            9階の催事場「日本のものづくり展」に出展していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            1年に一度の福袋も販売しています!またお買い上げ時にはサンプル3個貰えるお得なクーポンもお配りしています。
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/12/5</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">無添加ボディスクラブの販売開始！<br>
+                            天然成分だけで作ったお肌に優しいスクラブです。古い角質を落とし、天然オイルがお肌をしっとりと仕上げてくれます。スイートとソルトの2種類が完成しました！<br>
+                            無添加ボディスクラブシリーズはこちら<br>
+                            <a
+                                href="https://www.mutenka-sekken.com/SHOP/205485/list.html">https://www.mutenka-sekken.com/SHOP/205485/list.html</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/11/22</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">神戸セレクション2019に認定されました！<br>
+                            神戸セレクション2019に「無添加スイートスクラブ　神戸はちみつ＆神戸こめぬか　スイートバニラの香り」が認定されました！
+                            <a
+                                href=" https://www.mutenka-sekken.com/SHOP/S001.html">https://www.mutenka-sekken.com/SHOP/S001.html</a>
+                            これで神戸セレクションは8年連続の認定となりました！これからも神戸の石鹸屋として頑張っていきたいと思います！
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/10/9</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">京都　大丸店で販売会開始!!<br>
+                            10月10日(水)から10月15日(月)の間販売会を行います。<br>7階催事場「着こなし上手　くらし上手　いいものマルシェ」に出店していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています!
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/10/4</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">そごう　西神店で販売会開始!!<br>
+                            10月5日(金)から10月7日(日)の間販売会を行います。<br>2階化粧品売り場のエスカレーター横に出店していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています!
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/9/26</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">近鉄百貨店　あべのハルカスで販売会開始!!<br>
+                            9月27日(水)から10月2日(火)の間販売会を行います。<br>ウイング館9階催事場「ナチュラルビューティーフェア」に出店していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています!
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/9/23</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">ヘアケアシリーズがリニューアルして販売再開！<br>
+                            大変長らくお待たせしました！シャンプー、リンスのパッケージ変更を行いました！成分は変更しておりません。
+                            詳しくはこちら↓↓<br>
+                            <a
+                                href="http://www.mutenka-sekken.com/SHOP/173209/list.html">http://www.mutenka-sekken.com/SHOP/173209/list.html</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/9/5</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">高松三越で販売会開始!!<br>
+                            9月11日(火)から17日(月)の間販売会を行います。<br>本館1階化粧品売場のイベントスペースで展開していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています!
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/9/4</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">台風の影響による発送遅延のお知らせ<br>
+                            台風21号の接近による影響で、本日9月4日は発送ができない可能性がございます。お急ぎのお客様には大変恐れ入りますが、商品到着までお待ち下さい。
+                            ご不便をおかけして申し訳ございません。<br>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/8/15</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">千葉そごうで販売会開始!!<br>
+                            8月20日(月)から30日(木)の間販売会を行います。<br>6階化粧品売場「日本の職人展」で展開していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています!
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/8/10</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">お盆休みのお知らせ<br>
+                            誠に勝手ながら、8月11日より15日までお休みさせて頂きます。商品のご注文はお休みの間も受け付けておりますが、商品の発送は8月16日より順次発送となりますのでご了承の程宜しくお願い申し上げます。<br>また、ご質問等に対するお返事も同様の対応とさせて頂きますのでご了承ください。<br>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/7/29</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">阪神百貨店で販売会開始!!<br>
+                            8月1日(水)から7日(火)の間販売会を行います。<br>2階化粧品売場「コスメティックキューブ」で展開していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています!
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/7/24</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">8月のプレゼント受付開始!<br>
+                            風呂の日プレゼントの7月当選者が決定しました。発表は発送をもって代えさせていただきます。<br>
+                            引き続き8月分の募集も行っておりますので、どんどんご応募ください。
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/7/14</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">2018年お中元ギフト好評受付中！<br>
+                            期間限定で8月19日まで販売致します。ご自身でお好きな石鹸をお選び頂くセットと人気石鹸の詰め合わせセットをご用意しました！<br>
+                            くわしくはこちら！<br><a
+                                href="https://www.mutenka-sekken.com/SHOP/164680/200024/list.html">https://www.mutenka-sekken.com/SHOP/164680/200024/list.html</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/6/26</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">7月のプレゼント受付開始!<br>
+                            風呂の日プレゼントの6月当選者が決定しました。発表は発送をもって代えさせていただきます。<br>
+                            引き続き7月分の募集も行っておりますので、どんどんご応募ください。
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/6/12</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">札幌　東急百貨店で販売会開始!!<br>
+                            6月14日(木)から19日(火)の間販売会を行います。<br>9階催事場「神戸セレクション」に出店していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            新商品の「神戸　米ぬか石鹸」も先行販売しています。<br>またお買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています!
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/5/27</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">こだわりの父の日ギフト販売会開始しました！<br>
+                            5月27日から6月17日の間「こだわりの父の日ギフトセット」の販売を行います。<br>数量限定でなくなり次第終了致します。オリジナルのかわいい特製ギフト包装でお届けいたします！<br>
+                            くわしくはこちら！<br><a
+                                href="https://www.mutenka-sekken.com/SHOP/164680/200024/list.html">https://www.mutenka-sekken.com/SHOP/164680/200024/list.html</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/5/26</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">6月のプレゼント受付開始!<br>
+                            風呂の日プレゼントの5月当選者が決定しました。発表は発送をもって代えさせていただきます。<br>
+                            引き続き6月分の募集も行っておりますので、どんどんご応募ください。
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/5/21</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">広島　福屋八丁堀本店で販売会開始!!<br>
+                            5月23日(水)から29日(火)の間販売会を行います。<br>8階催事場「神戸セレクション」に出店していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            新商品の「神戸　米ぬか石鹸」も先行販売しています。<br>またお買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています!
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/5/11</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">新商品「神戸　米ぬか石鹸」できました！<br>
+                            コールドプロセス製法で作る新しい米ぬか石鹸できました！たっぷりの泡立ちでしっとり洗いがります！
+                            詳しくはこちら↓↓<br>
+                            <a
+                                href="https://www.mutenka-sekken.com/SHOP/K026.html">https://www.mutenka-sekken.com/SHOP/K026.html</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/5/1</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">5月のプレゼント受付開始!<br>
+                            風呂の日プレゼントの4月当選者が決定しました。発表は発送をもって代えさせていただきます。<br>
+                            引き続き5月分の募集も行っておりますので、どんどんご応募ください。
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/4/28</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">こだわりの母の日ギフト販売会開始しました！<br>
+                            4月28日から5月20日の間「こだわりの母の日ギフトセット」の販売を行います。<br>数量限定でなくなり次第終了致します。オリジナルのかわいい特製ギフト包装でお届けいたします！<br>
+                            くわしくはこちら！<br><a
+                                href="https://www.mutenka-sekken.com/SHOP/164680/200024/list.html">https://www.mutenka-sekken.com/SHOP/164680/200024/list.html</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/4/3</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">阪急梅田本店で販売会開始!!<br>
+                            4月4日(水)から9日(月)の間販売会を行います。<br>9階催事場「第20回記念　日本の職人展」に出店していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            新商品の「神戸　米ぬか石鹸」も先行販売しています。<br>またお買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています!
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/3/31</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">4月のプレゼント受付開始!<br>
+                            風呂の日プレゼントの3月当選者が決定しました。発表は発送をもって代えさせていただきます。<br>
+                            引き続き3月分の募集も行っておりますので、どんどんご応募ください。
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/3/19</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">神戸ワイナリーでイベント開催！<br>
+                            3月24日(土)・25日(日)の二日間販売会を行います。<br>入口すぐ右手側で展開していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                        </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/3/13</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">阪急西宮で販売会開始!<br>
+                            3月14日(水)から20日(火)の間販売会を行います。<br>1階のご進物センター前、バス・リラクシング売場にいますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            新商品の「神戸　米ぬか石鹸」も先行販売しています。<br>またお買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています!</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/3/10</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">ファッション雑誌<a
+                                href="https://comepass.jp/magazine/magazine-35571/">「カジカジ　４月号」</a>に掲載されました！<br>
+                            150ページに会社の歴史など掲載されています！
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2018/02/23</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text"><a
+                                href="https://www.mutenka-sekken.com/hpgen/HPB/entries/6.html ">無添加石鹸本舗のサイトをリニューアルしました！現会員のお客様はパスワードの再設定をお願い致します。</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/12/26</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">阪急うめだ本店「日本のものづくり市」に出店します。<br>
+                            12月26日(から31日まで販売会を行います。最終日は18:00終了です。<br>
+                            9階の催事場「日本のものづくり展」に出展していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            1年に一度の福袋も販売しています!またお買い上げ時にはサンプル3個貰えるお得なクーポンもお配りしています。
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/12/25</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">年末年始休暇のお知らせ<br>誠に勝手ながら、12月28日より1月4日までお休みさせて頂きます。<br>
+                            商品のご購入はお休みの間も受け付けておりますが、商品の発送は12月27日の午後12時の時点でご入金確認分までが年内最終出荷、それ以降の受注分は1月5日より順次発送となりますのでご了承の程宜しくお願い申し上げます。
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/12/23</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">福袋を公開しました。<br>数量限定となっており、なくなり次第の終了となります。 </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/12/12</div>
+                        <div class="top-news__list-item-tag"><span class="info">お知らせ</span></div>
+                        <div class="top-news__list-item-text">期間限定「らんちき　じばさん　びーむす」で商品展開します!<br>
+                            12/13(水)～12/31(日)兵庫県内の地場産品を一堂に集めたイベント『じばさん らんちき びーむす 』で商品のみ展開しています。<br>
+                            神戸大丸6階M BASE 内　MY COLLECTIONSです。お近くにお越しの際はお立ち寄りください! </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/11/13</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">阪神百貨店本店で販売会開始!<br>11月15日(水)から21日(火)まで販売会を行います。<br>
+                            今回は1階です。イベントスペース(エスカレータ―横)で展開していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはサンプル3個貰えるお得なクーポンをお配りしています。</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/11/01</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">BEAMS JAPANで限定販売開始!<br>兵庫県内の地場産品を一堂に集めたイベント『じばさん らんちき
+                            びーむす』で商品のみ展開しています。<br>
+                            渋谷区のビームスジャパン1F ですので、お近くにお越しの際はお立ち寄りください。</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/10/26</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">
+                            渋谷ロフトで期間限定販売開始!<br>渋谷ロフトで11/2(木)～8(水)の間展開します。(最終日17時閉場)<br>
+                            今回は販売員なしで、一部の商品展開になります。
+                        </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/10/25</div>
+                        <div class="top-news__list-item-tag"><span class="event">雑誌</span></div>
+                        <div class="top-news__list-item-text">ヤギの専門誌「ヤギ飼いになる」にヤギミルク石鹸が掲載されました!<br>
+                            とてもかわいいヤギを買いたい人のための専門書です。93ページに掲載されています!</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/10/18</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">阪急西宮で販売会開始!<br>
+                            10月18日(水)から24日(火)の間販売会を行います。<br>1階のご進物センター前、バス・リラクシング売場にいますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています!</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/9/26</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">
+                            大分県「トキハ百貨店　本店」で販売会開始!<br>9月28日から10月3日まで販売会を行います。最終日は17:00閉場です。<br>
+                            8階催事場「神戸コレクション」に出展していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはサンプル3個貰えるお得なクーポンをお配りしています。</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/8/17</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">千葉そごうで販売会開始!<br>8月21日から8月31日まで販売会を行います。最終日は17:00閉場です。<br>
+                            6階の催事場「日本の職人展」に出展していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはサンプル3個貰えるお得なクーポンをお配りしています。</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/8/10</div>
+                        <div class="top-news__list-item-tag"><span class="event">お知らせ</span></div>
+                        <div class="top-news__list-item-text">お盆休みのお知らせ<br>誠に勝手ながら、8月11日より15日までお休みさせて頂きます。<br>
+                            商品のご注文はお休みの間も受け付けておりますが、商品の発送は8月16日より順次発送となりますのでご了承の程宜しくお願い申し上げます。<br>
+                            また、ご質問等のメールに対するお返事も同様の対応とさせて頂きますのでご了承ください。</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/7/12</div>
+                        <div class="top-news__list-item-tag"><span class="event">お知らせ</span></div>
+                        <div class="top-news__list-item-text">TV放送の告知!<br>7月23日(日)12時放送のサンTV「モノ知りサンデー」に出演します。<br>
+                            工場や職人、モノづくりに対するこだわりなど紹介される予定です。是非ご覧下さい!</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/7/4</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">阪神百貨店本店で販売会開始!<br>7月5日(水)から11日(火)まで販売会を行います。<br>
+                            2階のイベントスペース「コスメティックキューブ(ファンケル横)」で展開していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはサンプル3個貰えるお得なクーポンをお配りしています。</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/6/12</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">東急百貨店　札幌店で販売会が始まります!<br>
+                            6月15日(水)から20日(火)の間販売会を行います。9階催事場　上りエスカレーター横に出展しておりますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはミニ石鹸が3個貰えるお得なクーポンをお配りしています!</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/5/31</div>
+                        <div class="top-news__list-item-tag"><span class="event">お知らせ</span></div>
+                        <div class="top-news__list-item-text">女性誌「WITH」7月号に掲載されました!<br>
+                            「旅する石鹸　さくら」が旅に便利なアイテムとして紹介されました。125ページに掲載されています。</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/5/24</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">広島　福屋百貨店　八丁堀本店で販売会開始!<br>
+                            5月24日～30日まで販売会を行います。8階の催事場「神戸セレクション会場」の前にいますので、お近くにお越しの際は是非お立ち寄り下さい。<br>
+                            お買い上げ時にはプチギフト石鹸が3個貰えるお得なクーポンもお配りしています!</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/4/29</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">東急ハンズ名古屋店(JR名古屋ナカシヤマ内)で販売会開始!<br>
+                            5月1日(月)から7日(日)まで販売会を行います。5階のビューティー&コンセプトコーナーに出展していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはサンプル3個貰えるお得なクーポンもお配りしています。</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/4/13</div>
+                        <div class="top-news__list-item-tag"><span class="event">お知らせ</span></div>
+                        <div class="top-news__list-item-text">「旅の手帳　5月号」に掲載されました!<br>
+                            旅する石鹸が旅の便利アイテムとして掲載されました。背表紙裏(130ぺージ)に一面で載っています! </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/4/4</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">阪急梅田本店で販売会開始!<br>
+                            4月5日(水)から10日(月)まで販売会を行います。9階の催事場「日本の職人展」に出展していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            年に一度の福袋も販売しています!またお買い上げ時にはサンプル3個貰えるお得なクーポンもお配りしています。</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/3/1</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">阪急西宮で販売会開始!<br>
+                            3月1日(水)から7日(火)の間販売会を行います。1階のご進物センター前、バス・リラクシング売場にいますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはプチ石鹸が3個貰えるお得なクーポンをお配りしています! </div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/2/14</div>
+                        <div class="top-news__list-item-tag"><span class="event">イベント</span></div>
+                        <div class="top-news__list-item-text">阪神百貨店 梅田本店で販売会開始!<br>
+                            2月15日(水)から20日(月)まで販売会を行います。最終日は17:00終了です。8階の催事場「すこやか美人フェア」に出展していますので、お近くにお越しの際は是非お立ち寄り下さい!<br>
+                            お買い上げ時にはサンプル3個貰えるお得なクーポンをお配りしています。</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/1/20</div>
+                        <div class="top-news__list-item-tag"><span class="event">お知らせ</span></div>
+                        <div class="top-news__list-item-text">東京ビッグサイト開催「国際化粧品展」に出展します!<br>
+                            1月23日～25日まで東京ビックサイトにて国際化粧品展が開催されます。弊社も出展しておりますので、卸販売やOEM製造にご興味のある企業様はぜひお立ち寄りください。<br>
+                            ブースナンバー:東第7ホール「18-48」</div>
+                    </div>
+                </li>
+                <li class="top-news__list">
+                    <div class="top-news__list-item">
+                        <div class="top-news__list-item-date">2017/11/13</div>
+                        <div class="top-news__list-item-tag"><span class="event">お知らせ</span></div>
+                        <div class="top-news__list-item-text">新年明けましておめでとうございます!<br>
+                            本年は本日5日より営業開始です。今年は新規格の商品やOEM規格など、いろいろ新しいことを始めます!<br>
+                            これまで以上に良い製品・サービスをご提供できるよう心がけて参ります。<br>
+                            本年も無添加石鹸本舗をお引き立ての程、どうぞよろしくお願い申し上げます。</div>
+                    </div>
+                </li>
+            </ul><!-- /.top-news__lists -->
+            <!--             <div class="top-news__btn">
+                <a href="#">
+                    もっと見る
+                </a>
+            </div> -->
+        </div>
+        <!--/.top-news__container -->
     </div>
+    <!--/.inner -->
+</div>
+<!--/.top-news -->
 
-    <div class="flex items-center justify-center mx-auto container">
-        {%if page_obj.has_previous %}
-        <a href="?page={{page_obj.previous_page_number}}" class="text-teal-500"><i
-                class="fas fa-arrow-left fa-lg"></i></a>
-        {% endif%}
 
-        <span class="mx-3 font-medium text-lg">
-            {% blocktrans with current_page=page_obj.number total_pages=page_obj.paginator.num_pages %}Page{{current_page}}
-            of {{total_pages}}{% endblocktrans %}</span>
-
-        {%if page_obj.has_next %}
-        <a href="?page={{page_obj.next_page_number}}" class="text-teal-500"><i class="fas fa-arrow-right fa-lg"></i></a>
-        {%endif%}
+<div class="top-ranking">
+    <div class="inner">
+        <div class="top-ranking__container">
+            <section class="top-ranking__ttl">
+                <h2 class="top-ranking__ttl-text">ランキング</h2>
+            </section>
+            <section class="top-ranking__cards">
+                <div class="top-ranking__card">
+                    <div class="top-ranking__card-body top-ranking__card-inner">
+                        <div>
+                            <div class="top-ranking__number">
+                                <a href="https://www.mutenka-sekken.com/SHOP/K015.html">
+                                    <img src="svg/icon-ranking.svg" alt="ランキング" class="top-ranking__number-icn">
+                                </a>
+                                <p class="top-ranking__number-text">1位</p>
+                                <h3 class="top-ranking__number-name">神戸酒石鹸</h3>
+                            </div>
+                            <P class="top-ranking__card-body-text">260年の歴史を誇る灘の老舗酒蔵「神戸酒心館」の作るこだわりの福寿・純米大吟醸を配合。<br>
+                                酒を造る杜氏の手が白くてすべすべしているのはお酒にたっぷり含まれる美肌成分アミノ酸のおかげだと言われています。
+                            </p>
+                            <div class="top-ranking__card-body-btn">
+                                <a href="https://www.mutenka-sekken.com/SHOP/K015.html">
+                                    詳しくはこちら
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-ranking__card-img">
+                        <!-- ランキング1位の商品画像 -->
+                        <a href="https://www.mutenka-sekken.com/SHOP/K015.html">
+                            <img src="https://www.mutenka-sekken.com/pic-labo/sake_sekken.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="top-ranking__lists">
+                <div class="top-ranking__list">
+                    <div class="top-ranking__list-item">
+                        <a href="https://www.mutenka-sekken.com/SHOP/K003.html">
+                            <img src="https://www.mutenka-sekken.com/pic-labo/yagimilk_sekken_s.jpg">
+                        </a>
+                        <h3 class="top-ranking__list-item-title">2位　ヤギミルク石鹸</h3>
+                    </div>
+                </div>
+                <div class="top-ranking__list">
+                    <div class="top-ranking__list-item">
+                        <a href="https://www.mutenka-sekken.com/SHOP/A001.html">
+                            <img src="https://www.mutenka-sekken.com/pic-labo/komenuka_sekken_s.jpg">
+                        </a>
+                        <h3 class="top-ranking__list-item-title">3位　米ぬか石鹸</h3>
+                    </div>
+                </div>
+                <div class="top-ranking__list">
+                    <div class="top-ranking__list-item">
+                        <a href="https://www.mutenka-sekken.com/SHOP/K007.html">
+                            <img src="https://www.mutenka-sekken.com/pic-labo/tukaretaohada_sekken_s.jpg">
+                        </a>
+                        <h3 class="top-ranking__list-item-title">4位　疲れたお肌石鹸</h3>
+                    </div>
+                </div>
+                <div class="top-ranking__list">
+                    <div class="top-ranking__list-item">
+                        <a href="https://www.mutenka-sekken.com/SHOP/H001.html">
+                            <img src="https://www.mutenka-sekken.com/pic-labo/handcream640-min.jpg">
+                        </a>
+                        <h3 class="top-ranking__list-item-title">5位　おててしっとりハンドクリーム</h3>
+                    </div>
+                </div>
+            </section><!-- /.top-ranking__lists -->
+        </div>
+        <!--/.top-ranking__container -->
     </div>
+    <!--/.inner -->
+</div>
+<!--/.top-ranking -->
+
+
+<div class="top-products">
+    <section class="top-products__ttl">
+        <h2 class="top-products__ttl-text">商品紹介</h2>
+    </section>
+    <div class="inner">
+        <!-- 商品紹介メイン画像 -->
+        <div class="top-products__fig">
+            <a href="https://www.mutenka-sekken.com/SHOP/164680/173204/list.html">
+                <img src="https://www.mutenka-sekken.com/pic-labo/title_kamataki2.jpg">
+            </a>
+        </div>
+        <section class="top-products__cards bg1">
+            <div class="inner top-products__card">
+                <div class="top-products__card-ttl top-products__card-inner">
+                    <div>
+                        <h3 class="top-products__card-ttl-text">釜焚き石鹸</h3>
+                        <div class="top-products__card-ttl-btn">
+                            <a href="https://www.mutenka-sekken.com/SHOP/164680/173204/list.html" alt="釜焚き石鹸シリーズ">
+                                すべて見る
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-products__card-lead top-products__card-inner">
+                    <p class="top-products__card-lead-text">
+                        63年の伝統製法「釜焚き製法」。大きな釜に原料となる天然植物油と苛性ソーダを入れ、薪で火力を上げ約3日かけてじっくりと焚き上げてゆきます。<br>
+                        焚き上げた石鹸は何工程にも分けて自然乾燥させ、3か月かけてじっくり熟成させてゆきます。その後人の手で切り分け、丁寧に包装してゆきます。
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--/.top-products__cards -->
+        <div class="top-products__container">
+            <section class="top-products__lists">
+
+                <div class="top-products__list">
+                    <div class="top-products__list-item">
+                        <a href="https://www.mutenka-sekken.com/SHOP/A001.html" alt="釜焚き 米ぬか石鹸">
+                            <img src="https://www.mutenka-sekken.com/pic-labo/komenuka_sekken_s.jpg" alt="釜焚き 米ぬか石鹸">
+                        </a>
+                        <h3 class="top-products__list-item-title">釜焚き 米ぬか石鹸</h3>
+                    </div>
+                </div>
+
+                <div class="top-products__list">
+                    <div class="top-products__list-item">
+                        <a href="https://www.mutenka-sekken.com/SHOP/A003.html" alt="釜焚き よもぎ石鹸">
+                            <img src="https://www.mutenka-sekken.com/pic-labo/yomogi_sekken_s.jpg" alt="釜焚き よもぎ石鹸">
+                        </a>
+                        <h3 class="top-products__list-item-title">釜焚き よもぎ石鹸</h3>
+                    </div>
+                </div>
+                <div class="top-products__list">
+                    <div class="top-products__list-item">
+                        <a href="https://www.mutenka-sekken.com/SHOP/A006.html" alt="赤ちゃんにつかいたいやさしい石鹸">
+                            <img src="https://www.mutenka-sekken.com/pic-labo/baby_sekken_s.jpg" alt="赤ちゃんにつかいたいやさしい石鹸">
+                        </a>
+                        <h3 class="top-products__list-item-title">赤ちゃんにつかいたいやさしい石鹸</h3>
+                    </div>
+                </div>
+                <div class="top-products__list">
+                    <div class="top-products__list-item">
+                        <a href="https://www.mutenka-sekken.com/SHOP/A005.html" alt="釜焚き ラベンダー石鹸">
+                            <img src="https://www.mutenka-sekken.com/pic-labo/kamalavender_sekken_s.jpg"
+                                alt="釜焚き ラベンダー石鹸">
+                        </a>
+                        <h3 class="top-products__list-item-title">釜焚き ラベンター石鹸</h3>
+                    </div>
+                </div>
+                <div class="top-products__list">
+                    <div class="top-products__list-item">
+                        <a href="https://www.mutenka-sekken.com/SHOP/A004.html" alt="釜焚き カミツレ石鹸">
+                            <img src="https://www.mutenka-sekken.com/pic-labo/kamiture_sekken_s.jpg" alt="釜焚き カミツレ石鹸">
+                        </a>
+                        <h3 class="top-products__list-item-title">釜焚き カミツレ石鹸</h3>
+                    </div>
+                </div>
+            </section><!-- /.top-products__lists -->
+        </div>
+        <!--/.top-products__container -->
+    </div>
+    <!--/.inner -->
+</div>
+<!--/.top-products -->
+
+<div class="flex flex-wrap mb-10">
+    {% for room in rooms %}
+    {% include "mixins/room_card.html" with room=room %}
+    {% endfor %}
+</div>
+
+<div class="flex items-center justify-center mx-auto container">
+    {%if page_obj.has_previous %}
+    <a href="?page={{page_obj.previous_page_number}}" class="text-teal-500"><i class="fas fa-arrow-left fa-lg"></i></a>
+    {% endif%}
+
+    <span class="mx-3 font-medium text-lg">
+        {% blocktrans with current_page=page_obj.number total_pages=page_obj.paginator.num_pages %}Page{{current_page}}
+        of {{total_pages}}{% endblocktrans %}</span>
+
+    {%if page_obj.has_next %}
+    <a href="?page={{page_obj.next_page_number}}" class="text-teal-500"><i class="fas fa-arrow-right fa-lg"></i></a>
+    {%endif%}
+</div>
 
 
 </div>

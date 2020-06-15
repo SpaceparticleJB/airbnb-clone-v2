@@ -409,10 +409,6 @@ body.drawer-opened #overlay {
   opacity: 0.9;
   transition: 0.2s;
 }
-
-.slick-track {
-  height: 300px;
-}
 .slick-dotted.slick-slider {
   margin-bottom: 0 !important;
 }
@@ -427,17 +423,16 @@ body.drawer-opened #overlay {
   width: 2.5rem !important;
   height: 2.5rem !important;
   z-index: 1;
-  color: red;
 }
 .slick-prev:before,
 .slick-next:before {
   opacity: 0 !important;
 }
 .slick-prev:before {
-  content: url(../images/icn-arrow-left-sp.png) !important;
+  content: url(../../images/icn-arrow-left.png) !important;
 }
 .slick-next:before {
-  content: url(../images/icn-arrow-right-sp.png) !important;
+  content: url(../../images/icn-arrow-right.png) !important;
 }
 .slick-prev:before,
 .slick-next:before {
