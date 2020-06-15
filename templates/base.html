@@ -19,34 +19,35 @@
   <title>{% block page_title %}{% endblock page_title %}| Jbnb</title>
 </head>
 
-<body class="text-gray-800 mt-24 font-light">
+<body class="text-gray-800 font-light">
   {% include "partials/messages.html" %}
 
   <div class="global-header">
     <div class="global-header__upper inner clearfix">
       <header
-        class="container max-w-full inset-0 flex items-center justify-between px-6 h-20 border-b border-gray-400 bg-white">
-        <div class="flex items-center">
-          <div class="flex "></div>
-          {% block search-bar %}
-          <form method="get" action="{% url "rooms:search" %}">
-            <input
-              class="search-box border px-5 py-2 text-sm font-medium text-gray-900 placeholder-gray-600 rounded-sm w-32 shadow-md hover:shadow-lg focus:outline-none"
-              name="city" placeholder="{% trans "Search By Item" %}" />
-          </form>
-          {% endblock search-bar %}
-          <a href="{% url "core:home" %}" class="ml-6">
-            <h1>soap</h1>
-            <img class="w-32" src="{% static 'img/logo.png' %}">
-          </a>
+        class="container max-w-full inset-0 flex items-center justify-between px-6 h-40 border-b border-gray-400 bg-white">
+        <div class="ml-16">
+          <i class="fab fa-line fa-2x"></i>
+          <i class="fab fa-facebook-square fa-2x ml-2"></i>
+          <i class="fab fa-instagram fa-2x ml-2"></i>
         </div>
-        {% include "partials/nav.html" %}
+        <div>
+          <a href="{% url "core:home" %}" class="ml-6">
+
+            <img class="w-25vh ml-3" src="{% static 'img/logo.png' %}">
+
+          </a>
+
+        </div>
+        <div class="w-25vh">
+          {% include "partials/nav.html" %}
+        </div>
       </header>
     </div>
     <nav class="global-header__lower sticky-header" id="myHeader">
       <div class="inner">
         <ul class="global-header__gnav">
-          <li><a href="https://www.mutenka-sekken.com/">TOP</a></li>
+          <li><a href="{% url "core:home" %}">TOP</a></li>
           <li>
             <a href="https://www.mutenka-sekken.com/SHOP/list.php?Search=">商品一覧</a>
             <div class="global-header__megamenu">

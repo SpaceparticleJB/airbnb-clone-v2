@@ -427,6 +427,7 @@ body.drawer-opened #overlay {
   width: 2.5rem !important;
   height: 2.5rem !important;
   z-index: 1;
+  color: red;
 }
 .slick-prev:before,
 .slick-next:before {
