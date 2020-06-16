@@ -7,7 +7,7 @@
 
 {% block content %}
 
-<div class="-mt-5 container max-w-full h-75vh flex mb-20">
+<div class=" pt-16 container max-w-full h-75vh flex mb-20">
     <div class="h-full w-1/2 bg-center bg-cover" style="background-image:url({{room.first_photo}})"></div>
     <div class="h-full w-1/2 flex flex-wrap">
         {% for photo in room.get_next_four_photos %}
