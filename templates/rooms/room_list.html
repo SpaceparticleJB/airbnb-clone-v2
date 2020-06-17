@@ -895,14 +895,13 @@
 
 
                 <h2 class="image-with-text__heading">
-                    Handmade daily
+                    毎日手作り
                 </h2>
 
 
 
                 <div class="image-with-text__text rte">
-                    <p>Every day, our team of skilled artisans congregate in our kitchen to make pasta by hand. We use
-                        ethically sourced eggs and flour to obtain the best quality pasta.</p>
+                    <p>毎日、熟練した職人のチームがキッチンに集まり、手作業でドーナッツを作っています。 倫理的に調達された卵と小麦粉を使用して、最高品質のドーナッツを得ています。</p>
                 </div>
 
 
@@ -938,14 +937,13 @@
 
 
                 <h2 class="image-with-text__heading">
-                    Family tradition
+                    家族の伝統
                 </h2>
 
 
 
                 <div class="image-with-text__text rte">
-                    <p>Every dish has a purpose and story. We believe in the importance of respecting traditional
-                        methods so that our product remains true and integral.</p>
+                    <p>どの料理にも目的とストーリーがあります。 当社の製品が真実で不可欠であり続けるためには、伝統的な方法を尊重することの重要性を信じています。</p>
                 </div>
 
 
@@ -958,7 +956,7 @@
 </div>
 
 
-<div id="shopify-section-image-with-text-3" class="shopify-section">
+<div id="shopify-section-image-with-text-3" class="shopify-section pb-16">
     <section class="image-with-text image-with-text--full_background">
         <div class="image-with-text__inner">
             <div class="image-with-text__content
@@ -968,14 +966,13 @@
 
 
                 <h2 class="image-with-text__heading">
-                    Local pick up
+                    ローカルピックアップ
                 </h2>
 
 
 
                 <div class="image-with-text__text rte">
-                    <p>Our meals and pantry items are available for pick up at our South Street location Monday-Saturday
-                        12-6pm.</p>
+                    <p>ドーナッツとコーヒー、札幌市内では月曜日から土曜日の午後12時から午後6時までお受け取りいただけます。</p>
                 </div>
 
 
@@ -1005,24 +1002,24 @@
     <div class="inner">
         <div class="top-ranking__container">
             <section class="top-ranking__ttl">
-                <h2 class="top-ranking__ttl-text">ランキング</h2>
+                <h1 class="top-ranking__ttl-text">ランキング</h1>
             </section>
             <section class="top-ranking__cards">
                 <div class="top-ranking__card">
                     <div class="top-ranking__card-body top-ranking__card-inner">
                         <div>
                             <div class="top-ranking__number">
-                                <a href="https://www.mutenka-sekken.com/SHOP/K015.html">
-                                    <img src="svg/icon-ranking.svg" alt="ランキング" class="top-ranking__number-icn">
+                                <a href="#">
+                                    <img src="">
                                 </a>
                                 <p class="top-ranking__number-text">1位</p>
-                                <h3 class="top-ranking__number-name">神戸酒石鹸</h3>
+                                <h3 class="top-ranking__number-name">バナナドーナッツ</h3>
                             </div>
                             <P class="top-ranking__card-body-text">260年の歴史を誇る灘の老舗酒蔵「神戸酒心館」の作るこだわりの福寿・純米大吟醸を配合。<br>
                                 酒を造る杜氏の手が白くてすべすべしているのはお酒にたっぷり含まれる美肌成分アミノ酸のおかげだと言われています。
                             </p>
                             <div class="top-ranking__card-body-btn">
-                                <a href="https://www.mutenka-sekken.com/SHOP/K015.html">
+                                <a href="{% url "core:home" %}">
                                     詳しくはこちら
                                 </a>
                             </div>
@@ -1162,6 +1159,23 @@
     <!--/.inner -->
 </div>
 <!--/.top-products -->
+
+
+<div class="top-products__container">
+    <section class="top-products__lists">
+
+        <div class="top-products__list">
+            <div class="top-products__list-item">
+                {% for room in rooms %}
+                {% include "mixins/room_card.html" with room=room %}
+                {% endfor %}
+            </div>
+        </div>
+
+
+    </section><!-- /.top-products__lists -->
+</div>
+
 
 <div class="flex flex-wrap mb-10">
     {% for room in rooms %}
