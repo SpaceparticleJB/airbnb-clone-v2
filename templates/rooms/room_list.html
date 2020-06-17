@@ -5,37 +5,31 @@
 {%block content %}
 
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('.top-slider__container').slick({
-            infinite: true,
-            dots: true,
-            arrows: true,
-            autoplay: true, //自動再生
-            autoplaySpeed: 2400,
-            speed: 2500,
-            fade: true,
-            responsive: [{
-                breakpoint: 756,
-                settings: {
-                    centerMode: false,
-                }
-            }]
-        });
+    var elem = document.querySelector('.carousel');
+    var flkty = new Flickity(elem, {
+        // options
+
+        autoPlay: 4500
+    });
+
+    // element argument can be a selector string
+    //   for an individual element
+    var flkty = new Flickity('.carousel', {
+        // options
     });
 </script>
 
 
-<div class="top-slider">
-    <div class="top-slider__container">
-
-        <div class="top-slider__item">
+<div class="top-slider-flickity">
+    <div class="carousel" data-flickity='{ "autoPlay": 4500 }'>
+        <div class="carousel-cell-top w-full h-auto">
             <a href="#">
                 <img src="https://images.unsplash.com/photo-1541173056672-97e84767d149?ixlib=rb-1.2.1&auto=format&fit=crop&w=2794&q=80"
                     alt="">
                 <!-- <p class="top-slider__item-copy">無添加石鹸本舗</p> -->
             </a>
         </div>
-        <div class="top-slider__item">
+        <div class="carousel-cell-top w-full h-auto">
             <a href="#">
                 <img src="https://images.unsplash.com/photo-1542020667-adc2bf0b744d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1634&q=80"
                     alt="">
@@ -43,7 +37,7 @@
             </a>
         </div>
 
-        <div class="top-slider__item">
+        <div class="carousel-cell-top w-full h-auto">
             <a href="#">
                 <img src="https://images.unsplash.com/photo-1499392655230-76618946a1d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2813&q=80"
                     alt="">

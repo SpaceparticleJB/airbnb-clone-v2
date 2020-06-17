@@ -6,58 +6,87 @@
 {% endblock page_title %}
 
 {% block content %}
+
+<head>
+    <link rel="stylesheet" href="../../static/libraries/flickity-docs/flickity.min.css" media="screen">
+    <script src="../../static/libraries/flickity-docs/flickity.pkgd.min.js"></script>
+
+</head>
+
+
 <script type="text/javascript">
     $(document).ready(function () {
-        $('.slider-for').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.slider-nav'
-        });
-        $('.slider-nav').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            asNavFor: '.slider-for',
-            dots: true,
-            focusOnSelect: true
-        });
+        $('.carousel-main').flickity(
+            {
+                prevNextButtons: false,
 
-        $('a[data-slide]').click(function (e) {
-            e.preventDefault();
-            var slideno = $(this).data('slide');
-            $('.slider-nav').slick('slickGoTo', slideno - 1);
+            }
+        );
+        // 2nd carousel, navigation
+        $('.carousel-nav').flickity({
+            asNavFor: '.carousel-main',
+            contain: true,
+            pageDots: false,
+            prevNextButtons: false,
+
         });
     });
 </script>
 
 
-<div class="main">
-    <div class="slider slider-for">
+<div id="shopify-section-image-with-text-1" class="product-section">
+    <section class="image-with-text image-with-text--full_background">
+        <div class="image-with-text__inner">
+            <div id="product-picture"
+                class=" image-with-text__media image-with-text__media--right image-with-text__media--square">
+                <div>
+                    <div class="carousel carousel-main pb-10" data-flickity='{"prevNextButtons": false,
+                        }'>
+                        {% for photo in room.photos.all  %}
+                        <div class="carousel-cell-product">
+                            <img src="{{photo.file.url}}" class="" />
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="carousel carousel-nav pt-20" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false, "prevNextButtons": false,
+                        }'>
+                        {% for photo in room.photos.all  %}
+                        <div class="carousel-cell-product">
+                            <img src="{{photo.file.url}}" class="" />
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="image-with-text__content
+        image-with-text__content--medium
+        
+        ">
 
 
-        {% for photo in room.photos.all  %}
-        <div class="slider-item-for">
-            <img src="{{photo.file.url}}" class="" />
+                <h2 class="image-with-text__heading">
+                    Handmade daily
+                </h2>
+
+
+
+                <div class="image-with-text__text rte">
+                    <p>Every day, our team of skilled artisans congregate in our kitchen to make pasta by hand. We use
+                        ethically sourced eggs and flour to obtain the best quality pasta.</p>
+                </div>
+
+
+
+
+            </div>
         </div>
-        {% endfor %}
-    </div>
-    <div class="slider slider-nav">
+    </section>
 
 
-        {% for photo in room.photos.all  %}
-        <div class="slider-item-nav">
-            <img src="{{photo.file.url}}" class="" />
-        </div>
-        {% endfor %}
-    </div>
 </div>
 
 
-<div class=" pt-16 container max-w-full h-75vh flex mb-20">
-    <div class="h-full w-1/2 bg-center bg-cover" style="background-image:url({{room.first_photo}})"></div>
-</div>
-</div>
 
 <div class="container mx-auto flex justify-around pb-56">
     <div class="w-1/2">
@@ -150,4 +179,4 @@
 </div>
 </div>
 
-{% endblock %}
+{% endblock content %}
