@@ -6,31 +6,57 @@
 {% endblock page_title %}
 
 {% block content %}
-<script>
-    $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.slider-nav'
-    });
-    $('.slider-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        dots: true,
-        centerMode: true,
-        focusOnSelect: true
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            focusOnSelect: true
+        });
+
+        $('a[data-slide]').click(function (e) {
+            e.preventDefault();
+            var slideno = $(this).data('slide');
+            $('.slider-nav').slick('slickGoTo', slideno - 1);
+        });
     });
 </script>
-<div class=" pt-16 container max-w-full h-75vh flex mb-20">
-    <div class="h-full w-1/2 bg-center bg-cover" style="background-image:url({{room.first_photo}})"></div>
-    <div class="h-full w-1/2 flex flex-wrap">
-        {% for photo in room.get_next_four_photos %}
-        <div style="background-image:url({{photo.file.url}})"
-            class="w-1/2 h-auto bg-cover bg-center border-gray-700 border"></div>
+
+
+<div class="main">
+    <div class="slider slider-for">
+
+
+        {% for photo in room.photos.all  %}
+        <div class="slider-item-for">
+            <img src="{{photo.file.url}}" class="" />
+        </div>
         {% endfor %}
     </div>
+    <div class="slider slider-nav">
+
+
+        {% for photo in room.photos.all  %}
+        <div class="slider-item-nav">
+            <img src="{{photo.file.url}}" class="" />
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+<div class=" pt-16 container max-w-full h-75vh flex mb-20">
+    <div class="h-full w-1/2 bg-center bg-cover" style="background-image:url({{room.first_photo}})"></div>
+</div>
 </div>
 
 <div class="container mx-auto flex justify-around pb-56">
