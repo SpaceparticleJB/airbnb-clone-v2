@@ -1,0 +1,13 @@
+<a href="{% url 'rooms:detail' room.pk %}">
+    {% for photo in room.photos.all  %}
+    {% if forloop.counter == 1 %}
+    <div class="top-products__list">
+        <img src="{{photo.file.url}}" class="" />
+        <h3 class="top-products__list-item-title">¥{{room.price}} {{room.name}}</h3>
+
+    </div>
+    {% else %}
+    {% endif %}
+    {% endfor %}
+    <span class="text-black w-11/12 block truncate">{{room.name}}</span>
+</a>

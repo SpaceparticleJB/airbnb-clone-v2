@@ -20,18 +20,17 @@
 </script>
 
 
-<div class="top-slider-flickity">
+<div class="top-slider__container top-slider-flickity">
     <div class="carousel" data-flickity='{ "autoPlay": 4500 }'>
         <div class="carousel-cell-top w-full h-auto">
             <a href="#">
-                <img src="https://images.unsplash.com/photo-1541173056672-97e84767d149?ixlib=rb-1.2.1&auto=format&fit=crop&w=2794&q=80"
-                    alt="">
+                <img src="https://krispykreme.jp/cms/wp-content/uploads/2020/06/200610_pc_main.jpg" alt="">
                 <!-- <p class="top-slider__item-copy">無添加石鹸本舗</p> -->
             </a>
         </div>
         <div class="carousel-cell-top w-full h-auto">
             <a href="#">
-                <img src="https://images.unsplash.com/photo-1542020667-adc2bf0b744d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1634&q=80"
+                <img src="https://krispykreme.jp/cms/wp-content/themes/cms-template/images/ogbg/ogbg_main_pc.jpg"
                     alt="">
                 <!-- <p class="top-slider__item-copy">無添加石鹸本舗</p> -->
             </a>
@@ -39,7 +38,7 @@
 
         <div class="carousel-cell-top w-full h-auto">
             <a href="#">
-                <img src="https://images.unsplash.com/photo-1499392655230-76618946a1d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2813&q=80"
+                <img src="https://img21.shop-pro.jp/PA01449/160/slideshow/slideshow_img_6af2e6.jpg?cmsp_timestamp=20200601173047"
                     alt="">
                 <!-- <p class="top-slider__item-copy">無添加石鹸本舗</p> -->
             </a>
@@ -998,81 +997,8 @@
 
 </div>
 
-<div class="top-ranking">
-    <div class="inner">
-        <div class="top-ranking__container">
-            <section class="top-ranking__ttl">
-                <h1 class="top-ranking__ttl-text">ランキング</h1>
-            </section>
-            <section class="top-ranking__cards">
-                <div class="top-ranking__card">
-                    <div class="top-ranking__card-body top-ranking__card-inner">
-                        <div>
-                            <div class="top-ranking__number">
-                                <a href="#">
-                                    <img src="">
-                                </a>
-                                <p class="top-ranking__number-text">1位</p>
-                                <h3 class="top-ranking__number-name">バナナドーナッツ</h3>
-                            </div>
-                            <P class="top-ranking__card-body-text">260年の歴史を誇る灘の老舗酒蔵「神戸酒心館」の作るこだわりの福寿・純米大吟醸を配合。<br>
-                                酒を造る杜氏の手が白くてすべすべしているのはお酒にたっぷり含まれる美肌成分アミノ酸のおかげだと言われています。
-                            </p>
-                            <div class="top-ranking__card-body-btn">
-                                <a href="{% url "core:home" %}">
-                                    詳しくはこちら
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="top-ranking__card-img">
-                        <!-- ランキング1位の商品画像 -->
-                        <a href="https://www.mutenka-sekken.com/SHOP/K015.html">
-                            <img src="https://www.mutenka-sekken.com/pic-labo/sake_sekken.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="top-ranking__lists">
-                <div class="top-ranking__list">
-                    <div class="top-ranking__list-item">
-                        <a href="https://www.mutenka-sekken.com/SHOP/K003.html">
-                            <img src="https://www.mutenka-sekken.com/pic-labo/yagimilk_sekken_s.jpg">
-                        </a>
-                        <h3 class="top-ranking__list-item-title">2位　ヤギミルク石鹸</h3>
-                    </div>
-                </div>
-                <div class="top-ranking__list">
-                    <div class="top-ranking__list-item">
-                        <a href="https://www.mutenka-sekken.com/SHOP/A001.html">
-                            <img src="https://www.mutenka-sekken.com/pic-labo/komenuka_sekken_s.jpg">
-                        </a>
-                        <h3 class="top-ranking__list-item-title">3位　米ぬか石鹸</h3>
-                    </div>
-                </div>
-                <div class="top-ranking__list">
-                    <div class="top-ranking__list-item">
-                        <a href="https://www.mutenka-sekken.com/SHOP/K007.html">
-                            <img src="https://www.mutenka-sekken.com/pic-labo/tukaretaohada_sekken_s.jpg">
-                        </a>
-                        <h3 class="top-ranking__list-item-title">4位　疲れたお肌石鹸</h3>
-                    </div>
-                </div>
-                <div class="top-ranking__list">
-                    <div class="top-ranking__list-item">
-                        <a href="https://www.mutenka-sekken.com/SHOP/H001.html">
-                            <img src="https://www.mutenka-sekken.com/pic-labo/handcream640-min.jpg">
-                        </a>
-                        <h3 class="top-ranking__list-item-title">5位　おててしっとりハンドクリーム</h3>
-                    </div>
-                </div>
-            </section><!-- /.top-ranking__lists -->
-        </div>
-        <!--/.top-ranking__container -->
-    </div>
-    <!--/.inner -->
-</div>
-<!--/.top-ranking -->
+
+
 
 
 <div class="top-products">
@@ -1082,15 +1008,16 @@
     <div class="inner">
         <!-- 商品紹介メイン画像 -->
         <div class="top-products__fig">
-            <a href="https://www.mutenka-sekken.com/SHOP/164680/173204/list.html">
-                <img src="https://www.mutenka-sekken.com/pic-labo/title_kamataki2.jpg">
+            <a href="#">
+                <img
+                    src="https://images.unsplash.com/photo-1583096114844-06ce5a5f2171?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80">
             </a>
         </div>
         <section class="top-products__cards bg1">
             <div class="inner top-products__card">
                 <div class="top-products__card-ttl top-products__card-inner">
                     <div>
-                        <h3 class="top-products__card-ttl-text">釜焚き石鹸</h3>
+                        <h3 class="top-products__card-ttl-text">手作りドーナッツ</h3>
                         <div class="top-products__card-ttl-btn">
                             <a href="https://www.mutenka-sekken.com/SHOP/164680/173204/list.html" alt="釜焚き石鹸シリーズ">
                                 すべて見る
@@ -1100,8 +1027,9 @@
                 </div>
                 <div class="top-products__card-lead top-products__card-inner">
                     <p class="top-products__card-lead-text">
-                        63年の伝統製法「釜焚き製法」。大きな釜に原料となる天然植物油と苛性ソーダを入れ、薪で火力を上げ約3日かけてじっくりと焚き上げてゆきます。<br>
-                        焚き上げた石鹸は何工程にも分けて自然乾燥させ、3か月かけてじっくり熟成させてゆきます。その後人の手で切り分け、丁寧に包装してゆきます。
+                        一部店舗でドーナツのデリバリーサービスを実施中！
+                        季節限定ドーナツから人気No.1のオリジナル・グレーズド®まで、対象地域ならどこへでもお届けいたします。
+                        3種類のサービスをご用意しておりますので、デリバリー対象地域などでお選びください。
                     </p>
                 </div>
             </div>
@@ -1109,80 +1037,40 @@
         <!--/.top-products__cards -->
         <div class="top-products__container">
             <section class="top-products__lists">
+                {% for room in rooms %}
 
+                {% for photo in room.photos.all  %}
+                {% if forloop.counter == 1 %}
                 <div class="top-products__list">
-                    <div class="top-products__list-item">
-                        <a href="https://www.mutenka-sekken.com/SHOP/A001.html" alt="釜焚き 米ぬか石鹸">
-                            <img src="https://www.mutenka-sekken.com/pic-labo/komenuka_sekken_s.jpg" alt="釜焚き 米ぬか石鹸">
-                        </a>
-                        <h3 class="top-products__list-item-title">釜焚き 米ぬか石鹸</h3>
-                    </div>
+                    <a href="{% url 'rooms:detail' room.pk %}">
+                        <img src="{{photo.file.url}}" class="" />
+                        <h3 class="top-products__list-item-title">¥{{room.price}} {{room.name}}</h3>
+                    </a>
                 </div>
-
-                <div class="top-products__list">
-                    <div class="top-products__list-item">
-                        <a href="https://www.mutenka-sekken.com/SHOP/A003.html" alt="釜焚き よもぎ石鹸">
-                            <img src="https://www.mutenka-sekken.com/pic-labo/yomogi_sekken_s.jpg" alt="釜焚き よもぎ石鹸">
-                        </a>
-                        <h3 class="top-products__list-item-title">釜焚き よもぎ石鹸</h3>
-                    </div>
-                </div>
-                <div class="top-products__list">
-                    <div class="top-products__list-item">
-                        <a href="https://www.mutenka-sekken.com/SHOP/A006.html" alt="赤ちゃんにつかいたいやさしい石鹸">
-                            <img src="https://www.mutenka-sekken.com/pic-labo/baby_sekken_s.jpg" alt="赤ちゃんにつかいたいやさしい石鹸">
-                        </a>
-                        <h3 class="top-products__list-item-title">赤ちゃんにつかいたいやさしい石鹸</h3>
-                    </div>
-                </div>
-                <div class="top-products__list">
-                    <div class="top-products__list-item">
-                        <a href="https://www.mutenka-sekken.com/SHOP/A005.html" alt="釜焚き ラベンダー石鹸">
-                            <img src="https://www.mutenka-sekken.com/pic-labo/kamalavender_sekken_s.jpg"
-                                alt="釜焚き ラベンダー石鹸">
-                        </a>
-                        <h3 class="top-products__list-item-title">釜焚き ラベンター石鹸</h3>
-                    </div>
-                </div>
-                <div class="top-products__list">
-                    <div class="top-products__list-item">
-                        <a href="https://www.mutenka-sekken.com/SHOP/A004.html" alt="釜焚き カミツレ石鹸">
-                            <img src="https://www.mutenka-sekken.com/pic-labo/kamiture_sekken_s.jpg" alt="釜焚き カミツレ石鹸">
-                        </a>
-                        <h3 class="top-products__list-item-title">釜焚き カミツレ石鹸</h3>
-                    </div>
-                </div>
-            </section><!-- /.top-products__lists -->
-        </div>
-        <!--/.top-products__container -->
+                {% else %}
+                {% endif %}
+                {% endfor %}
+                {% endfor %}
+            </section>
+        </div><!-- /.top-products__lists -->
     </div>
-    <!--/.inner -->
+    <!--/.top-products__container -->
+</div>
+<!--/.inner -->
 </div>
 <!--/.top-products -->
 
-
-<div class="top-products__container">
-    <section class="top-products__lists">
-
-        <div class="top-products__list">
-            <div class="top-products__list-item">
-                {% for room in rooms %}
-                {% include "mixins/room_card.html" with room=room %}
-                {% endfor %}
-            </div>
-        </div>
-
-
-    </section><!-- /.top-products__lists -->
-</div>
-
-
-<div class="flex flex-wrap mb-10">
+<!-- <div class="flex flex-wrap mb-10">
     {% for room in rooms %}
-    {% include "mixins/room_card.html" with room=room %}
+    {% include "mixins/room_card2.html" with room=room %}
     {% endfor %}
-</div>
+</div> -->
 
+
+
+
+
+<!-- 
 <div class="flex items-center justify-center mx-auto container">
     {%if page_obj.has_previous %}
     <a href="?page={{page_obj.previous_page_number}}" class="text-teal-500"><i class="fas fa-arrow-left fa-lg"></i></a>
@@ -1197,6 +1085,9 @@
     {%endif%}
 </div>
 
+
+
+ -->
 
 </div>
 {% endblock content %}

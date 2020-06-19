@@ -56,84 +56,23 @@
             <a href="https://www.mutenka-sekken.com/SHOP/list.php?Search=">商品一覧</a>
             <div class="global-header__megamenu">
               <ul class="global-header__megamenu-lists inner">
+                {% for room in rooms %}
+
                 <li>
-                  <a href="https://www.mutenka-sekken.com/SHOP/164680/173204/list.html">
-                    <div class="global-header__megamenu-list-img"><img
-                        src="https://www.mutenka-sekken.com/pic-labo/menu_kamataki_series.jpg" alt="釜焚き石鹸シリーズ"></div>
-                    <h2 class="global-header__megamenu-list-txt">釜焚きシリーズ</h2>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.mutenka-sekken.com/SHOP/164680/173205/list.html">
-                    <div class="global-header__megamenu-list-img"><img
-                        src="https://www.mutenka-sekken.com/pic-labo/menu_cold_series.jpg" alt="コールドプロセス石鹸シリーズ"></div>
-                    <h2 class="global-header__megamenu-list-txt">コールドシリーズ</h2>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.mutenka-sekken.com/SHOP/164680/173207/list.html">
-                    <div class="global-header__megamenu-list-img"><img
-                        src="https://www.mutenka-sekken.com/pic-labo/menu_tabi_series.jpg" alt="旅する石鹸シリーズ"></div>
-                    <h2 class="global-header__megamenu-list-txt">旅する石鹸シリーズ</h2>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.mutenka-sekken.com/SHOP/164680/173206/list.html">
-                    <div class="global-header__megamenu-list-img"><img
-                        src="https://www.mutenka-sekken.com/pic-labo/menu_bar_series.jpg" alt="棒石鹸シリーズ"></div>
-                    <h2 class="global-header__megamenu-list-txt">棒石鹸シリーズ</h2>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.mutenka-sekken.com/SHOP/164680/173209/list.html">
-                    <div class="global-header__megamenu-list-img"><img
-                        src="https://www.mutenka-sekken.com/pic-labo/menu_shampoo_series2.jpg" alt="ヘアケアシリーズ"></div>
-                    <h2 class="global-header__megamenu-list-txt">ヘアケア</h2>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.mutenka-sekken.com/SHOP/164680/173208/list.html">
-                    <div class="global-header__megamenu-list-img"><img
-                        src="https://www.mutenka-sekken.com/pic-labo/menu_series_bodysoap.jpg" alt="ボディソープシリーズ"></div>
-                    <h2 class="global-header__megamenu-list-txt">ボディソープ</h2>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.mutenka-sekken.com/SHOP/164680/173210/list.html">
-                    <div class="global-header__megamenu-list-img"><img
-                        src="https://www.mutenka-sekken.com/pic-labo/menu_choco_series.jpg" alt="チョコレート石鹸"></div>
-                    <h2 class="global-header__megamenu-list-txt">チョコレート石鹸</h2>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.mutenka-sekken.com/SHOP/205485/list.html">
-                    <div class="global-header__megamenu-list-img"><img
-                        src="https://www.mutenka-sekken.com/pic-labo/menu_scrub_series.jpg" alt="無添加ボディスクラブ"></div>
-                    <h2 class="global-header__megamenu-list-txt">無添加ボディスクラブ</h2>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.mutenka-sekken.com/SHOP/207273/list.html">
-                    <div class="global-header__megamenu-list-img"><img
-                        src="https://www.mutenka-sekken.com/pic-labo/menu_series_handcream.jpg" alt="無添加ハンドクリーム"></div>
-                    <h2 class="global-header__megamenu-list-txt">無添加ハンドクリーム</h2>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.mutenka-sekken.com/SHOP/207274/list.html">
-                    <div class="global-header__megamenu-list-img"><img
-                        src="https://www.mutenka-sekken.com/pic-labo/menu_series_rip.jpg" alt="無添加リップバーム"></div>
-                    <h2 class="global-header__megamenu-list-txt">無添加リップバーム</h2>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.mutenka-sekken.com/SHOP/216646/list.html">
-                    <div class="global-header__megamenu-list-img"><img
-                        src="https://www.mutenka-sekken.com/pic-labo/llimg/father_choice785.jpg" alt="2020年父の日ギフト">
+                  <a href="{% url 'rooms:detail' room.pk %}">
+                    {% for photo in room.photos.all  %}
+                    {% if forloop.counter == 1 %}
+                    <div class="global-header__megamenu-list-img">
+                      <img src="{{photo.file.url}}" class="" />
+                      <h3 class="global-header__megamenu-list-txt">{{room.name}}</h3>
+
                     </div>
-                    <h2 class="global-header__megamenu-list-txt">2020年父の日ギフト</h2>
+                    {% else %}
+                    {% endif %}
+                    {% endfor %}
                   </a>
                 </li>
+                {% endfor %}
               </ul><!-- .megamenu-inner -->
             </div><!-- .megamenu -->
           </li>
