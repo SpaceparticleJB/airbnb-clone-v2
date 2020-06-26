@@ -6,16 +6,25 @@
 
 {% block content %}
 
-<div class="min-h-75vh m-auto">
+<div class="min-h-75vh">
 
-    <h3 class="mb-12 text-2xl text-center">Your Favourites</h3>
+    <h1 class="favtitle mb-12 text-2xl text-center mt-10 text-green-800 font-bold ">お気に入りリスト</h1>
 
 
     <div class="container mx-auto pb-10 ">
-        <div class="flex flex-wrap -mx-40 mb-10">
+        <div class="flex flex-wrap mb-10">
             {% for room in user.list.rooms.all  %}
-            {% include 'mixins/room_card.html' with room=room %}
-            {% endfor %}
+            {% for photo in room.photos.all  %}
+            {% if forloop.counter == 1 %}
+            <div class="top-products__list">
+                <a href="{% url 'rooms:detail' room.pk %}">
+                    <img src="{{photo.file.url}}" class="" />
+                    <h3 class="top-products__list-item-title">¥{{room.price}} {{room.name}}</h3>
+                </a>
+            </div>
+            {% else %}
+            {% endif %}
+            {% endfor %} {% endfor %}
         </div>
     </div>
 

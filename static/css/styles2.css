@@ -208,18 +208,18 @@ textarea {
   background-color: #f2efea;
   background-color: var(--sub-color);
 }
-.sp-global-header__drawernav-body .title {
+.sp-global-header__drawernav-body .title-h {
   padding: 2.5rem 1rem 1rem;
   border-bottom: solid 2px #e8e1c9;
 }
 .sp-global-header__drawernav-body i {
   margin-right: 0.25rem;
 }
-.sp-global-header__drawernav-body .title a {
+.sp-global-header__drawernav-body .title-h a {
   display: block;
   transition: 0.1s;
 }
-.sp-global-header__drawernav-body .title a:hover {
+.sp-global-header__drawernav-body .title-h a:hover {
   color: var(--text-link-color);
 }
 .sp-global-header__search {
@@ -2465,7 +2465,7 @@ body.drawer-opened #overlay {
     margin: 0 0 5rem;
   }
   .top-products__list-item-title {
-    margin: 2rem 0;
+    margin: 1rem 0;
     /*font-size: 1.6rem;*/
   }
   .top-products__list-item-text {

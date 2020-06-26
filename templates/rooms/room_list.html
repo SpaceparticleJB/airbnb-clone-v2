@@ -24,7 +24,7 @@
     <div class="carousel" data-flickity='{ "autoPlay": 4500 }'>
         <div class="carousel-cell-top w-full h-auto">
             <a href="#">
-                <img src="https://www.dealaday365.co.za/wp-content/uploads/2019/07/summer-vitamin-banner.jpg" alt="">
+                <img src="{% static 'img/vya-naturals-M3l24oENY2c-unsplash.jpg' %}" alt="">
                 <!-- <p class="top-slider__item-copy">無添加石鹸本舗</p> -->
             </a>
         </div>
@@ -211,10 +211,14 @@
 
                 {% for photo in room.photos.all  %}
                 {% if forloop.counter == 1 %}
-                <div class="top-products__list">
+                <div class="top-products__list text-center py-16">
                     <a href="{% url 'rooms:detail' room.pk %}">
                         <img src="{{photo.file.url}}" class="" />
-                        <h3 class="top-products__list-item-title">¥{{room.price}} {{room.name}}</h3>
+                        <h3 class="top-products__list-item-title "> {{room.name}}</h3>
+
+
+
+                        <h3 class="top-products__list-item-title">¥{{room.price}}</h3>
                     </a>
                 </div>
                 {% else %}

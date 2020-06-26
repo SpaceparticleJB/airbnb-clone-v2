@@ -82,11 +82,11 @@
 
                 {% on_favs room as on_favs_boolean %}
                 {% if on_favs_boolean %}
-                <a class="block mb-10 w-2/6 text-teal-600 font-bold"
-                    href="{% url 'lists:toggle-room' room.pk %}?action=remove">{% trans "Remove from Favourites" %}</a>
+                <a class="button btn-link block bg-yellow-500"
+                    href="{% url 'lists:toggle-room' room.pk %}?action=remove">{% trans "お気に入りから削除" %}</a>
                 {% else %}
-                <a class="block mb-10 w-2/6 text-teal-600 font-bold"
-                    href="{% url 'lists:toggle-room' room.pk %}?action=add">{% trans "Save to Favourites" %}</a>
+                <a class="button btn-link block bg-green-500"
+                    href="{% url 'lists:toggle-room' room.pk %}?action=add">{% trans "お気に入りに追加" %}</a>
 
                 {% endif %}
 
@@ -94,14 +94,12 @@
 
 
                 {% else %}
-                <a class="block mb-10 w-2/6 text-teal-600 font-bold" a
-                    href="{% url "users:login"%}">{% trans "Save to Favourites" %}</a>
-                <a class="block mb-10 w-2/6 text-teal-600 font-bold" a
-                    href="{% url "users:login"%}">{% trans "Save to Favourites" %}</a>
+                <a class="button btn-link block bg-green-800" a href="{% url "users:login"%}">{% trans "カートに入れる" %}</a>
+                <a class="button btn-link block bg-green-500" a href="{% url "users:login"%}">{% trans "お気に入りに追加" %}</a>
 
                 {% endif %}
 
-                <div class="w-1/3">
+                <div class="image-with-text__text rte">
                     {% if room.host == user %}
                     <a href="{% url 'rooms:edit' room.pk %}" class="btn-link block">Edit Room</a>
                     {% else %}
@@ -109,20 +107,18 @@
 
                     {% for calendar in room.get_calendars %}
 
-                    <div class="">
-                        {% for day in calendar.get_days  %}
+                    {% for day in calendar.get_days  %}
 
-                        {% if forloop.counter == 3 %}
+                    {% if forloop.counter == 3 %}
 
-                        <a href="{% url 'reservations:create' room.pk day.year day.month day.number %}"
-                            class="cal-number bg-gray-200 text-gray-700 hover:bg-teal-400 hover:text-white hover:font-medium">buy</a>
-                        {% else %}
-                        <span></span>
-                        {% endif %}
+                    <a href="{% url 'reservations:create' room.pk day.year day.month day.number %}" class="button"
+                        style="width:500px;">カートに入れる</a>
+                    {% else %}
+                    <span></span>
+                    {% endif %}
 
 
-                        {% endfor %}
-                    </div>
+                    {% endfor %}
                 </div>
                 {% endfor %}
                 {% endif %}
@@ -131,36 +127,7 @@
             </div>
 
 
-            <div class="mt-10">
-                <h4 class="font-medium text-2xl mb-5">Reviews</h4>
-                <div class="flex items-center">
-                    <div>
-                        <i class="fas fa-star text-teal-500"></i>
-                        <span class="font-bold text-xl">{{room.total_rating}}</span>
-                    </div>
-                    <div class="h-4 w-px bg-gray-400 mx-5"></div>
-                    <div>
-                        <span class="font-bold text-xl">{{room.reviews.count}}</span>
-                        <span>review{{room.reviews.count|pluralize}}</span>
-                    </div>
-                </div>
-                <div class="mt-10">
-                    {% for review in room.reviews.all  %}
-                    <div class="border-section">
-                        <div class="mb-3 flex">
-                            <div>
-                                {% include "mixins/user_avatar.html" with user=review.user h_and_w='w-10 h-10' text='text-xl' %}
-                            </div>
-                            <div class="flex flex-col ml-5">
-                                <span class="font-medium">{{review.user.first_name}}</span>
-                                <span class="text-sm text-gray-500">{{review.created|date:'F Y'}}</span>
-                            </div>
-                        </div>
-                        <p>{{review.review}}</p>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
+
         </div>
 </div>
 </section>
@@ -171,10 +138,39 @@
 
 
 <div class="container mx-auto flex justify-around pb-56">
-    <div class="w-1/2">
+    <div class="w-2/3">
+        <div class="mt-10">
+            <h4 class="font-medium text-2xl mb-5">Reviews</h4>
+            <div class="flex items-center">
+                <div>
+                    <i class="fas fa-star text-teal-500"></i>
+                    <span class="font-bold text-xl">{{room.total_rating}}</span>
+                </div>
+                <div class="h-4 w-px bg-gray-400 mx-5"></div>
+                <div>
+                    <span class="font-bold text-xl">{{room.reviews.count}}</span>
+                    <span>review{{room.reviews.count|pluralize}}</span>
+                </div>
+            </div>
+            <div class="mt-10">
+                {% for review in room.reviews.all  %}
+                <div class="border-section">
+                    <div class="mb-3 flex">
+                        <div>
+                            {% include "mixins/user_avatar.html" with user=review.user h_and_w='w-10 h-10' text='text-xl' %}
+                        </div>
+                        <div class="flex flex-col ml-5">
+                            <span class="font-medium">{{review.user.first_name}}</span>
+                            <span class="text-sm text-gray-500">{{review.created|date:'F Y'}}</span>
+                        </div>
+                    </div>
+                    <p>{{review.review}}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
 
-
-
+        <div class="title pt-20">商品説明</div>
         <p class="border-section">
             {{room.description}}
         </p>
